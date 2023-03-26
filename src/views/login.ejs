@@ -1,0 +1,92 @@
+<%- include('includes/head') %>
+<div  class="w-full h-full fixed">
+  <video width="320" height="240" autoplay loop muted class="w-full h-full object-cover">
+    <source src="/frontend/assets/bg-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="h-screen flex items-center justify-center gap-3 px-6 py-6">
+
+  <div class="flex gap-4 w-full h-full items-center justify-center">
+
+    <div class="bg-zinc-900 px-4 py-4 h-5/6 w-1/3 rounded-xl shadow-lg flex flex-col items-center justify-between bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70">
+      <div class="w-8/12 flex flex-col mt-4">
+        <div class="w-full flex justify-center items-center" id="accountFormChanger">
+          <button class="text-xl text-gray-400 w-1/2 transition-all duration-700 ease-in-out" id="loginChooser">
+            Entrar
+          </button>
+          <button class="text-xl text-gray-400 w-1/2 transition-all duration-700 ease-in-out" id="registerChooser">
+            Cadastrar
+          </button>
+        </div>
+        <div class="bg-gray-300 h-0.5 w-1/2 transition-all duration-700 ease-in-out" id="chooserBar">
+        </div>
+      </div>
+
+      <div class="flex overflow-hidden h-5/6" id="formSlider">
+        <form action="" id="loginForm" class="flex flex-col gap-4 w-full h-full shrink-0 transition-all duration-700 ease-in-out px-8">
+          <h2 class="text-5xl text-gray-400 mb-12">Entre na sua conta</h2>
+      
+          <div class="flex flex-col gap-1 text-gray-400 text-lg">
+            <label for="email" class="pl-2">Nome de usuário ou e-mail</label>
+            <input type="text" name="userEmail" id="userEmail" class="bg-transparent shadow-xl border border-zinc-900 text-gray-400 text-sm rounded-lg px-4 py-2 outline-none">
+          </div>
+      
+          <div class="flex flex-col gap-1 text-gray-400 text-lg">
+      
+            <label for="password" class="pl-2">Senha</label>
+            <input type="password" name="password" id="password" class="bg-transparent shadow-xl border border-zinc-900 text-gray-400 text-sm rounded-lg px-4 py-2  outline-none">
+      
+            <a href="/login/password-recovery">
+              <div class="flex flex-col gap-1 text-gray-400 text-sm hover:text-white">
+                <p for="password" class="pl-2">Esqueceu sua senha?</p>
+              </div>
+            </a>
+      
+          </div>
+      
+          <div class="flex flex-col gap-2 text-gray-400 text-xl ">
+            <button type="submit" class="bg-zinc-900 text-gray-300 rounded-lg px-4 py-2  outline-none">Entrar</button>
+          </div>
+      
+        </form>
+
+        <form action="" id="loginForm" class="flex flex-col gap-4 w-full h-full shrink-0 transition-all duration-700 ease-in-out px-8">
+          <h2 class="text-5xl text-gray-400 mb-12">Registre-se agora</h2>
+      
+          <div class="flex flex-col gap-1 text-gray-400 text-lg">
+            <label for="email" class="pl-2">Nome de usuário</label>
+            <input type="text" name="userEmail" id="userEmail" class="bg-transparent shadow-xl border border-zinc-900 text-gray-400 text-sm rounded-lg px-4 py-2  outline-none">
+          </div>
+      
+          <div class="flex flex-col gap-1 text-gray-400 text-lg">
+            <label for="email" class="pl-2">E-mail</label>
+            <input type="email" name="email" id="email" class="bg-transparent shadow-xl border border-zinc-900 text-gray-400 text-sm rounded-lg px-4 py-2  outline-none">
+          </div>
+      
+          <div class="flex flex-col gap-1 text-gray-400 text-lg">
+            <label for="password" class="pl-2">Senha</label>
+            <input type="password" name="password" id="password" class="bg-transparent shadow-xl border border-zinc-900 text-gray-400 text-sm rounded-lg px-4 py-2  outline-none">
+          </div>
+      
+          <div class="flex flex-col gap-1 text-gray-400 text-lg">
+            <label for="password" class="pl-2">Confirme a senha</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" class="bg-transparent shadow-xl border border-zinc-900 text-gray-400 text-sm rounded-lg px-4 py-2  outline-none">
+          </div>
+      
+          <div class="flex flex-col gap-2 text-gray-400 text-xl ">
+            <button type="submit" class="bg-zinc-900 text-gray-300 rounded-lg px-4 py-2  outline-none">Registrar</button>
+          </div>
+      
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<%- include('includes/bottom') %>

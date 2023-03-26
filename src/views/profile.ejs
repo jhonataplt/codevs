@@ -1,0 +1,66 @@
+<%- include('includes/head') %>
+
+<div  class="w-full h-full fixed">
+  <video width="320" height="240" loop autoplay muted class="w-full h-full object-cover">
+    <source src="/frontend/assets/bg-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="h-screen flex items-center justify-center gap-3 px-6 py-6">
+
+  <div class="bg-zinc-900 px-4 py-4 w-16 rounded-xl shadow-lg flex flex-col items-center justify-center bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70">
+    <%- include('includes/sidebar') %>
+  </div>
+
+  <div class="flex gap-2 w-full h-full items-center justify-center">
+
+    <div class="bg-zinc-900 w-full h-full px-4 py-4 rounded-xl shadow-lg flex flex-col items-center bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70">
+      <h1 class="text-gray-200 text-4xl text-center w-2/3 pb-2 mx-auto">Software Engineer at Google</h1>
+      <div class="h-0.5 w-2/3 bg-gray-400"></div>
+    </div>
+    
+    <div class="flex flex-col h-full w-96 rounded-xl gap-2 shadow-lg bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70">
+
+      <div class="flex flex-col gap-0.5">
+        <div class="w-full pt-[75%] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 bg-zinc-900 rounded-t-xl overflow-hidden">
+          <img src="/frontend/assets/img/profile3.png" alt="profile" class="mx-auto absolute top-[-25%] bottom-0 left-0 right-0 w-full">
+        </div>
+        <div class="bg-zinc-900 h-12 py-6 px-6 w-full rounded-b-xl shadow-lg flex items-center bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70">
+          <p class="text-center text-lg w-full text-gray-200">anonymous_user</p>
+        </div>
+      </div>
+      <div class="bg-zinc-900 w-full h-full gap-8 px-4 py-4 rounded-xl shadow-lg flex flex-col items-center bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70">
+        <div class="flex flex-col w-full">
+          <h2 class="text-xl text-gray-200 w-full">Sobre mim</h2>
+          <p class="text-lg text-gray-400 w-full mt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi eum, quasi est distinctio natus aut delectus iste odio incidunt necessitatibus fugiat quibusdam saepe ipsam libero, non rerum rem hic?</p>
+        </div>
+        <div class="flex flex-col w-full">
+          <h2 class="text-xl text-gray-200 w-full">Tecnologias</h2>
+          <div class="grid grid-cols-5 gap-4 w-full mt-2">
+            <img src="/frontend/assets/img/icons/html.svg" alt="">
+            <img src="/frontend/assets/img/icons/css.svg" alt="">
+            <img src="/frontend/assets/img/icons/javascript.svg" alt="">
+            <img src="/frontend/assets/img/icons/node-js.svg" alt="">
+            <img src="/frontend/assets/img/icons/express.svg" alt="">
+            <img src="/frontend/assets/img/icons/ejs.svg" alt="">
+            <img src="/frontend/assets/img/icons/tailwind.svg" alt="">
+            <img src="/frontend/assets/img/icons/mongo.svg" alt="">
+            <img src="/frontend/assets/img/icons/mysql.svg" alt="">
+            <img src="/frontend/assets/img/icons/sql.svg" alt="">
+            <img src="/frontend/assets/img/icons/c.svg" alt="">
+            <img src="/frontend/assets/img/icons/python.svg" alt="">
+            <img src="/frontend/assets/img/icons/git.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </div>
+
+
+</div>
+
+<%- include('includes/bottom') %>
